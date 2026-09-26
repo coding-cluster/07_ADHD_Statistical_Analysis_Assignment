@@ -1,0 +1,79 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[skip=4pt]{parskip}
+\setlist{itemsep=1pt, topsep=1pt}
+
+\setmainfont{Calibri}[
+  UprightFont = *,
+  BoldFont = * Bold,
+  ItalicFont = * Italic
+]
+
+\definecolor{accent}{HTML}{1F4E79}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{\thesection.}{0.5em}{}
+\titlespacing{\section}{0pt}{0.5em}{0.3em}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\bfseries\color{accent} Sampling Plan: ADHD Prevalence in Aguascalientes}\\[0.4em]
+    {\large Homework 2: Sampling}
+\end{center}
+
+\vspace{0.5em}
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{Name:} & Alexis Alberto Z\'u\~niga Alonso \\
+\textbf{Institution:} & EdgeHub | School of Innovation \\
+\textbf{Class:} & Statistical Methods \\
+\textbf{Submitted to:} & M.Sc. Axel Torres \\
+\textbf{Date:} & September 25, 2026 \\
+\end{tabular}
+\end{center}
+
+\vspace{0.4em}
+\hrule
+\vspace{0.2em}
+
+\section{Problem Statement}
+This study looks at how common ADHD is among children and teenagers in the state of Aguascalientes, Mexico. The goal is to get a reliable estimate of ADHD screening rates in school-age students, which can help schools and health authorities plan better support and resources.
+
+\section{Population}
+All children and teenagers between 6 and 17 years of age enrolled in elementary and high schools in the state of Aguascalientes.
+
+\section{Variable to Measure}
+Whether the student screens positive for ADHD (yes or no). This is a categorical, binary variable.
+
+\section{Unit of Observation}
+Each individual student between 6 and 17 years old, enrolled in a school in Aguascalientes, on whom an ADHD screening result (positive or negative) is recorded.
+
+\section{Sampling Frame}
+The \emph{Cat\'alogo de Centros de Trabajo de la SEP}, which lists every public and private elementary and high school currently active in Aguascalientes. Once a school is selected, its own enrollment lists per group are used as the frame for the second stage.
+
+\section{Sampling Unit}
+Two sampling units are used, one for each stage of the design:
+\begin{itemize}[itemsep=2pt]
+    \item \textbf{First stage:} the school. Each school registered in the SEP catalog is a sampling unit.
+    \item \textbf{Second stage:} the group (classroom). Within each school selected in the first stage, groups are the sampling units from which students are drawn.
+\end{itemize}
+
+\section{Sampling Method}
+Probabilistic sampling. Every school and every group has a known, nonzero chance of being selected, which allows the results to be generalized to the full population and lets us calculate a margin of error.
+
+\section{Type of Sampling}
+Two-stage stratified sampling.
+\begin{itemize}[itemsep=2pt]
+    \item \textbf{Stage 1 (schools):} Schools are first grouped into strata, for example by municipality and by school type (public or private). A random sample of schools is then drawn from each stratum.
+    \item \textbf{Stage 2 (groups):} Within each selected school, groups are randomly sampled, and all students in the chosen groups are screened for ADHD.
+\end{itemize}
+This design keeps costs and travel down while still giving fair representation to the different types of schools in the state.
+
+\end{document}
