@@ -27,4 +27,4 @@ This is a class assignment for the Statistical Methods course at EdgeHub, taught
 
 **Part 1** is a static PDF; to rebuild it from source you'll need a LaTeX distribution (MiKTeX or TeX Live) with `xelatex`, since the report uses `fontspec` for a custom font.
 
-**Part 2** needs R with the `dplyr` package. The notebook additionally needs a Jupyter setup with the R kernel (IRkernel). `notebook/stage2_sampling_estimates.ipynb` expects to be run from inside the `notebook/` folder, since it references the dataset as `../data/car_prices.csv`.
+**Part 2** needs R with the `dplyr` package. The notebook additionally needs a Jupyter setup with the R kernel (IRkernel). `notebook/notebook.ipynb` expects to be run from inside the `notebook/` folder, since it references the dataset as `../data/car_prices.csv`.
