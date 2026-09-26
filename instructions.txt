@@ -1,0 +1,22 @@
+Tarea 2: Muestreo
+Instrucciones
+Fecha de entrega: 25/09/2026
+1. Establezca una problemática de su interés y diseñe un plan de muestreo,
+considerando los siguientes elementos:
+a. Población
+b. Variable a medir
+c. Unidad de observación
+d. Marco de muestreo
+e. Unidad de muestreo
+f. Método de muestreo (con sus variables pertinentes)
+g. Tipo de muestreo
+2. Considerando la base de datos “car_prices.csv”, realice lo siguiente:
+a. Ajusten la semilla con set.seed(123)
+b. Extraiga una muestra aleatoria simple de tamaño n=50,000
+c. Estime la media de la variable “sellingprice” en cada tipo de muestreo e
+indique su intervalo de confianza al 95%.
+
+Entregables:
+- PDF con el plan de muestreo del punto 1 y con las respuestas del punto 2.
+- Script de R con el que estimaron los valores del punto 2.
+
